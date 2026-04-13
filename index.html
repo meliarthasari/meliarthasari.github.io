@@ -1,168 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meli Arthasari</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: #222;
-      background: #f8f9fb;
-    }
-
-    /* NAVBAR */
-    nav {
-      position: sticky;
-      top: 0;
-      background: white;
-      padding: 15px 40px;
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #eee;
-      z-index: 1000;
-    }
-
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #333;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #000;
-    }
-
-    /* HERO */
-    .hero {
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background: linear-gradient(to bottom, #ffffff, #f0f2f5);
-      padding: 20px;
-    }
-
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-
-    .hero h2 {
-      font-weight: 400;
-      color: #555;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      font-style: italic;
-      color: #777;
-    }
-
-    /* SECTIONS */
-    .container {
-      max-width: 950px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-
-    h2 {
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 20px;
-      font-size: 1.8em;
-    }
-
-    p {
-      margin-bottom: 15px;
-      color: #444;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    /* CARD STYLE */
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-      margin-bottom: 40px;
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    /* CONTACT */
-    .contact p {
-      margin: 6px 0;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 0.9em;
-      color: #777;
-    }
-
-    /* FADE-IN ANIMATION */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.8s ease;
-    }
-
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-  </style>
-</head>
-<body>
-
-<!-- NAV -->
-<nav>
-  <div><strong>Meli Arthasari</strong></div>
-  <div>
-    <a href="#profile">Profile</a>
-    <a href="#about">About</a>
-    <a href="#impact">Impact</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
 <!-- HERO -->
 <section class="hero">
   <div>
     <h1>Meli Arthasari</h1>
     <h2>Editor in Chief</h2>
-    <p>Where strategy meets storytelling to shape influence.</p>
+    <p>Shaping narratives, influence, and legacy through strategic storytelling.</p>
   </div>
 </section>
 
 <!-- CONTENT -->
 <div class="container">
 
+  <!-- PROFILE -->
   <section id="profile" class="card fade-in">
     <h2>Profile</h2>
     <p>
@@ -175,15 +23,22 @@
     <p>
       Recognized for shaping narratives that elevate influence and strengthen strategic positioning.
     </p>
+    <p>
+      Known for bridging leadership insight with editorial excellence to create narratives that matter.
+    </p>
   </section>
 
+  <!-- ABOUT -->
   <section id="about" class="card fade-in">
     <h2>About</h2>
     <p>
-      Meli Arthasari is a media and business leader bridging executive strategy and editorial leadership.
+      Meli Arthasari is a media and business leader bridging executive strategy with editorial leadership,
+      shaping how influence and legacy are communicated in today’s evolving landscape.
     </p>
+
     <p>
-      She leads editorial direction and brand positioning for Indonesia under Britishpedia Media Group.
+      She leads editorial direction and brand positioning for Indonesia under Britishpedia Media Group,
+      contributing to a growing international publishing platform.
     </p>
 
     <p><strong>Global Presence:</strong></p>
@@ -193,7 +48,8 @@
     </ul>
 
     <p>
-      She leads the publication of the <strong>“Encyclopedia of Successful People in Indonesia”</strong>.
+      She leads the publication of the <strong>“Encyclopedia of Successful People in Indonesia”</strong>,
+      a flagship project capturing influential figures shaping the nation.
     </p>
 
     <ul>
@@ -202,75 +58,72 @@
     </ul>
   </section>
 
-  <section id="impact" class="card fade-in">
-    <h2>Selected Impact</h2>
+  <!-- EDITORIAL SCOPE -->
+  <section class="card fade-in">
+    <h2>Editorial Scope</h2>
     <ul>
-      <li>Led national-level encyclopedia launch</li>
-      <li>Expanding second edition reach and influence</li>
-      <li>Directed high-profile editorial narratives</li>
-      <li>Built strong relationships with key leaders</li>
-      <li>Elevated storytelling into strategic assets</li>
+      <li>
+        <strong>Government:</strong> Current and former national leaders and policymakers shaping governance, policy, and public discourse
+      </li>
+      <li>
+        <strong>Business:</strong> Corporate leaders, BUMN executives, and entrepreneurs shaping industries across national and international markets
+      </li>
+      <li>
+        <strong>Academia:</strong> Scholars and public intellectuals advancing knowledge and influencing global discourse
+      </li>
+      <li>
+        <strong>Arts & Entertainment:</strong> Cultural figures and creators shaping the creative economy and public imagination
+      </li>
     </ul>
   </section>
 
- <section class="card fade-in">
-  <h2>Editorial Scope</h2>
-  <ul>
-    <li>
-  <strong>Government:</strong> Current and former national leaders and policymakers shaping governance, policy, and public discourse
-</li>
-    <li>
-      <strong>Business:</strong> Corporate executives, BUMN leaders, and entrepreneurs shaping industries and economic transformation
-    </li>
-    <li>
-      <strong>Academia:</strong> Scholars and public intellectuals advancing knowledge and influencing global discourse
-    </li>
-    <li>
-      <strong>Arts & Entertainment:</strong> Cultural figures and creators shaping the creative economy and public imagination
-    </li>
-  </ul>
-</section>
-
+  <!-- FEATURED WORK -->
   <section class="card fade-in">
     <h2>Featured Work</h2>
     <p>
-      Strategic Interviews & Leadership Narratives capturing insights, decisions, and journeys behind success.
+      Selected interviews and editorial features capturing leadership perspectives,
+      strategic decisions, and defining moments behind success.
     </p>
   </section>
 
-   <section class="card fade-in">
-  <h2>Partnership Opportunities</h2>
+  <!-- PARTNERSHIP -->
+  <section class="card fade-in">
+    <h2>Partnership Opportunities</h2>
 
-  <p>
-    Collaborating with leaders, institutions, and organizations to shape narratives, 
-    strengthen positioning, and build lasting influence through strategic editorial work.
-  </p>
+    <p>
+      Selectively partnering with leaders and institutions to craft narratives that define influence,
+      elevate positioning, and build enduring legacy.
+    </p>
 
-  <ul>
-    <li>
-      <strong>Executive Profiling:</strong> Developing high-level narratives for ministers, executives, and founders to strengthen public positioning and legacy
-    </li>
-    <li>
-      <strong>Strategic Interviews:</strong> Crafting in-depth conversations that highlight leadership perspective and thought leadership
-    </li>
-    <li>
-      <strong>Institutional Storytelling:</strong> Building compelling narratives for corporations, BUMN, and organizations
-    </li>
-    <li>
-      <strong>Publication Partnerships:</strong> Collaborative editorial projects, including curated publications and leadership features
-    </li>
-    <li>
-      <strong>Personal Brand Positioning:</strong> Shaping credibility, influence, and long-term narrative for public figures
-    </li>
-  </ul>
+    <ul>
+      <li>
+        <strong>Executive Profiling:</strong> High-level narratives for ministers, executives, and founders
+      </li>
+      <li>
+        <strong>Strategic Interviews:</strong> In-depth conversations highlighting leadership and thought perspective
+      </li>
+      <li>
+        <strong>Institutional Storytelling:</strong> Narrative development for corporations, BUMN, and organizations
+      </li>
+      <li>
+        <strong>Publication Partnerships:</strong> Collaborative editorial and publishing projects
+      </li>
+      <li>
+        <strong>Personal Brand Positioning:</strong> Building credibility, influence, and long-term narrative
+      </li>
+    </ul>
 
-  <p>
-    Open for selective collaborations aligned with long-term impact and strategic value.
-  </p>
-</section>
+    <p>
+      Open for selective collaborations aligned with long-term impact and strategic value.
+    </p>
+  </section>
 
-    <section id="contact" class="card contact fade-in">
+  <!-- CONTACT -->
+  <section id="contact" class="card contact fade-in">
     <h2>Contact</h2>
+    <p>
+      For collaborations and inquiries, please reach out via email or phone.
+    </p>
     <p>Email: arthasarimel77@gmail.com</p>
     <p>Phone: +62 878 7282 5521</p>
     <p>Location: Bekasi, Indonesia</p>
@@ -278,30 +131,5 @@
 
 </div>
 
-<footer>
-  © 2026 Meli Arthasari
-</footer>
 
-<!-- ANIMATION SCRIPT -->
-<script>
-  const faders = document.querySelectorAll('.fade-in');
-
-  const appearOptions = {
-    threshold: 0.2
-  };
-
-  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    });
-  }, appearOptions);
-
-  faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-  });
-</script>
-
-</body>
-</html>
+   
