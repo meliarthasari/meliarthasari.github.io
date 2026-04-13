@@ -1,247 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meli Arthasari</title>
+  <meta charset="UTF-8">
+  <title>Meli Arthasari | Strategic & Commercial Professional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+    }
 
-<style>
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 0;
+    }
 
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #f8f9fb;
-  color: #222;
-}
+    h1, h2, h3 {
+      margin-bottom: 15px;
+    }
 
-nav {
-  position: sticky;
-  top: 0;
-  background: white;
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #eee;
-}
+    h1 {
+      font-size: 42px;
+    }
 
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-}
+    h2 {
+      font-size: 28px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
 
-.hero {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(#fff, #f0f2f5);
-}
+    p {
+      color: #555;
+    }
 
-.hero h1 {
-  font-family: 'Playfair Display';
-  font-size: 3em;
-}
+    /* HERO */
+    .hero {
+      background: #111;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
 
-.hero h2 {
-  font-weight: 400;
-  color: #555;
-}
+    .hero p {
+      color: #ccc;
+      max-width: 700px;
+      margin: auto;
+    }
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 60px 20px;
-}
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
 
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  margin-bottom: 40px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
 
-h2 {
-  font-family: 'Playfair Display';
-}
+    .card:hover {
+      transform: translateY(-5px);
+    }
 
-ul {
-  padding-left: 20px;
-}
+    .subtitle {
+      max-width: 700px;
+      margin-bottom: 40px;
+      color: #666;
+    }
 
-.grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
+    /* PROJECT */
+    .project {
+      margin-bottom: 30px;
+    }
 
-.image-collage {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.image-collage img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.video-frame iframe {
-  width: 100%;
-  height: 100%;
-  min-height: 220px;
-  border-radius: 8px;
-}
-
-.project-title {
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-footer {
-  text-align: center;
-  padding: 30px;
-  color: #777;
-}
-
-</style>
+    /* FOOTER */
+    .footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
-  <div><strong>Meli Arthasari</strong></div>
-  <div>
-    <a href="#about">About</a>
-    <a href="#scope">Scope</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
+<!-- HERO -->
 <section class="hero">
-  <div>
+  <div class="container">
     <h1>Meli Arthasari</h1>
-    <h2>Strategic Communications & Commercial Leader</h2>
-    <p>Bridging narrative, business, and influence</p>
+    <p>
+      Strategic & Commercial Professional with a strong foundation in leadership storytelling, 
+      business development, and cross-industry partnerships.
+    </p>
   </div>
 </section>
 
-<div class="container">
-
-<section id="about" class="card">
-  <h2>About</h2>
-  <p>
-    A strategic leader with 15+ years of experience across media, advertising, and business development.
-  </p>
-  <p>
-    Combining storytelling expertise with commercial strategy to build positioning, influence, and long-term value.
-  </p>
+<!-- ABOUT -->
+<section>
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      A professional with a unique blend of editorial leadership and commercial experience, 
+      specializing in translating narratives into strategic value. Experienced in working across 
+      media, corporate, and industrial sectors-bridging communication, positioning, and business growth.
+    </p>
+  </div>
 </section>
 
-<section id="scope" class="card">
-  <h2>Editorial & Leadership Scope</h2>
-  <ul>
-    <li><strong>Government:</strong> Current and former national leaders</li>
-    <li><strong>Business:</strong> Corporate, BUMN, and entrepreneurs</li>
-    <li><strong>Academia:</strong> Thought leaders</li>
-    <li><strong>Arts & Entertainment:</strong> Creative industry leaders</li>
-  </ul>
+<!-- EDITORIAL SCOPE -->
+<section>
+  <div class="container">
+    <h2>Editorial Scope</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>Government</h3>
+        <p>Ministers, national leaders, and former public officials shaping national direction and policy.</p>
+      </div>
+
+      <div class="card">
+        <h3>Business</h3>
+        <p>
+          Corporate leaders across national and multinational companies, including:
+          <br>• Corporate Executives  
+          <br>• BUMN Leaders  
+          <br>• Entrepreneurs & Founders
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Academia</h3>
+        <p>Thought leaders, scholars, and public intellectuals contributing to knowledge and discourse.</p>
+      </div>
+
+      <div class="card">
+        <h3>Arts & Entertainment</h3>
+        <p>Artists, creators, and cultural figures influencing creative industries and public narratives.</p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<section id="projects" class="card">
-  <section class="card fade-in">
-  <h2>Selected Projects</h2>
+<!-- PROJECTS -->
+<section>
+  <div class="container">
+    <h2>Selected Projects</h2>
 
-  <!-- LEADERSHIP POSITIONING -->
-  <p class="project-title">Leadership Positioning</p>
-
-  <div class="grid-2">
-    
-    <!-- COLLAGE -->
-    <div class="image-collage">
-      <img src="https://via.placeholder.com/300x200" alt="">
-      <img src="https://via.placeholder.com/300x200" alt="">
-      <img src="https://via.placeholder.com/300x200" alt="">
-      <img src="https://via.placeholder.com/300x200" alt="">
+    <div class="project">
+      <h3>Leadership Positioning</h3>
+      <p>
+        Developed and curated executive profiles through in-depth interviews as part of the 
+        “Successful People in Indonesia” Encyclopedia project of Britishpedia. Highlighting leadership journeys, strategic thinking, 
+        and influence across industries.
+      </p>
     </div>
 
-    <!-- VIDEO -->
-    <div class="video-frame">
-      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
+    <div class="project">
+      <h3>Commercial & Business Development</h3>
+      <p>
+        • Secured partnerships with national companies for Out of Home (OOH) media planning and placement. <br>
+        • Led business expansion initiatives across industries including mining and manufacturing. <br>
+        • Established strategic collaborations with leading industry players to drive growth and operational impact.
+      </p>
     </div>
 
   </div>
-
-  <ul>
-    <li>Developed “Successful People in Indonesia” Britishpedia Encyclopedia, featuring national leaders and industry figures</li>
-    <li>Produced strategic interviews highlighting leadership vision and influence</li>
-    <li>Translated executive journeys into structured narratives for public positioning</li>
-  </ul>
-
-
-  <!-- COMMERCIAL & BUSINESS -->
-  <p class="project-title">Commercial & Business Development</p>
-
-  <ul>
-    <li>
-      Secured strategic partnerships with leading national companies for Out of Home (OOH) media campaigns
-    </li>
-    <li>
-      Led business expansion across mining, manufacturing, and commercial sectors through strategic relationship building
-    </li>
-    <li>
-      Established partnerships with prominent industry players, supporting growth and stakeholder engagement
-    </li>
-    <li>
-      Drove continuous improvement initiatives to enhance operational and business performance
-    </li>
-  </ul>
-
 </section>
-<section class="partnership">
+
+<!-- PARTNERSHIP -->
+<section>
   <div class="container">
     <h2>Partnership Opportunities</h2>
     <p class="subtitle">
-      Where narrative meets strategy - enabling leaders and institutions 
+      Where narrative meets strategy, enabling leaders and institutions 
       to shape influence, credibility, and growth.
     </p>
 
-    <div class="services">
-      <div class="service-item">
+    <div class="grid">
+
+      <div class="card">
         <h3>Executive Profiling</h3>
-        <p>Developing refined leadership narratives that elevate personal brand, authority, and long-term positioning at the executive level.</p>
+        <p>Developing refined leadership narratives that elevate authority and positioning.</p>
       </div>
 
-      <div class="service-item">
+      <div class="card">
         <h3>Strategic Interviews</h3>
-        <p>Designing and conducting high-value conversations that extract vision, expertise, and thought leadership into impactful editorial assets.</p>
+        <p>Designing high-value conversations that translate into impactful thought leadership.</p>
       </div>
 
-      <div class="service-item">
+      <div class="card">
         <h3>Institutional Storytelling</h3>
-        <p>Building cohesive narratives that articulate an organization’s purpose, legacy, and strategic direction to key stakeholders.</p>
+        <p>Crafting compelling narratives that communicate purpose, legacy, and strategy.</p>
       </div>
 
-      <div class="service-item">
+      <div class="card">
         <h3>Commercial & Strategic Advisory</h3>
-        <p>Aligning storytelling with business objectives through partnership development, market positioning, and revenue-oriented initiatives.</p>
+        <p>Aligning storytelling with business objectives, partnerships, and growth initiatives.</p>
       </div>
+
     </div>
   </div>
 </section>
-</div>
 
-<footer>
-© 2026 Meli Arthasari
-</footer>
+<!-- CONTACT -->
+<section class="footer">
+  <div class="container">
+    <h2>Let’s Connect</h2>
+    <p>Email: your@email.com</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+  </div>
+</section>
 
 </body>
 </html>
