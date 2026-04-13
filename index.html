@@ -1,111 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meli Arthasari</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meli Arthasari</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <style>
-    html { scroll-behavior: smooth; }
+<style>
 
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: #222;
-      background: #f8f9fb;
-    }
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f8f9fb;
+  color: #222;
+}
 
-    nav {
-      position: sticky;
-      top: 0;
-      background: white;
-      padding: 15px 40px;
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #eee;
-      z-index: 1000;
-    }
+nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
 
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #333;
-      font-size: 14px;
-    }
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
 
-    .hero {
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background: linear-gradient(to bottom, #ffffff, #f0f2f5);
-      padding: 20px;
-    }
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(#fff, #f0f2f5);
+}
 
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
+.hero h1 {
+  font-family: 'Playfair Display';
+  font-size: 3em;
+}
 
-    .hero h2 {
-      font-weight: 400;
-      color: #555;
-    }
+.hero h2 {
+  font-weight: 400;
+  color: #555;
+}
 
-    .hero p {
-      font-style: italic;
-      color: #777;
-    }
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
 
-    .container {
-      max-width: 950px;
-      margin: auto;
-      padding: 60px 20px;
-    }
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
 
-    h2 {
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 20px;
-    }
+h2 {
+  font-family: 'Playfair Display';
+}
 
-    p { color: #444; }
+ul {
+  padding-left: 20px;
+}
 
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-      margin-bottom: 40px;
-      transition: 0.3s;
-    }
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
-    .card:hover { transform: translateY(-5px); }
+.image-collage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
 
-    ul { padding-left: 20px; }
+.image-collage img {
+  width: 100%;
+  border-radius: 8px;
+}
 
-    li { margin-bottom: 10px; }
+.video-frame iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  border-radius: 8px;
+}
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #777;
-    }
+.project-title {
+  font-weight: bold;
+  margin-top: 20px;
+}
 
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.8s ease;
-    }
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
 
-    .visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+</style>
 </head>
 
 <body>
@@ -114,9 +117,8 @@
   <div><strong>Meli Arthasari</strong></div>
   <div>
     <a href="#about">About</a>
-    <a href="#impact">Impact</a>
     <a href="#scope">Scope</a>
-    <a href="#partnership">Collaboration</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -125,98 +127,105 @@
   <div>
     <h1>Meli Arthasari</h1>
     <h2>Strategic Communications & Commercial Leader</h2>
-    <p>Bridging business strategy, narrative, and influence.</p>
+    <p>Bridging narrative, business, and influence</p>
   </div>
 </section>
 
 <div class="container">
 
-  <!-- ABOUT -->
-  <section id="about" class="card fade-in">
-    <h2>About</h2>
-    <p>
-      A strategic leader with over 15+ years of experience across media, advertising, and business development.
-    </p>
-    <p>
-      Bridging commercial strategy with narrative excellence, shaping positioning, influence, and long-term value for leaders and organizations.
-    </p>
-    <p>
-      Currently leading editorial direction at Britishpedia - Indonesia, while bringing a strong foundation in sales, partnerships, and cross-industry business growth.
-    </p>
-  </section>
+<section id="about" class="card">
+  <h2>About</h2>
+  <p>
+    A strategic leader with 20+ years of experience across media, advertising, and business development.
+  </p>
+  <p>
+    Combining storytelling expertise with commercial strategy to build positioning, influence, and long-term value.
+  </p>
+</section>
 
-  <!-- EDITORIAL SCOPE -->
-  <section id="scope" class="card fade-in">
-    <h2>Editorial & Leadership Scope</h2>
-    <ul>
-      <li><strong>Government:</strong> Current and former national leaders and policymakers</li>
-      <li><strong>Business:</strong> Corporate leaders, BUMN executives, and entrepreneurs</li>
-      <li><strong>Academia:</strong> Thought leaders and public intellectuals</li>
-      <li><strong>Arts & Entertainment:</strong> Cultural figures and creative industry leaders</li>
-    </ul>
-  </section>
+<section id="scope" class="card">
+  <h2>Editorial & Leadership Scope</h2>
+  <ul>
+    <li><strong>Government:</strong> Current and former national leaders</li>
+    <li><strong>Business:</strong> Corporate, BUMN, and entrepreneurs</li>
+    <li><strong>Academia:</strong> Thought leaders</li>
+    <li><strong>Arts & Entertainment:</strong> Creative industry leaders</li>
+  </ul>
+</section>
 
-  <!-- IMPACT -->
-  <section id="impact" class="card fade-in">
-    <h2>Selected Impact & Commercial Experience</h2>
-    <ul>
-      <li>Led national-level leadership encyclopedia publication</li>
-      <li>Built strategic narratives for high-profile leaders and public figures</li>
-      <li>Led business development across media, advertising, FMCG, ICT, manufacturing, and mining sectors</li>
-      <li>Managed key accounts and strategic client relationships</li>
-      <li>Delivered revenue growth through integrated communication and sales strategy</li>
-      <li>Bridging storytelling with commercial objectives across industries</li>
-    </ul>
-  </section>
+<section id="projects" class="card">
+  <h2>Selected Projects</h2>
 
-  <!-- PARTNERSHIP -->
-  <section id="partnership" class="card fade-in">
-    <h2>Partnership Opportunities</h2>
+  <p class="project-title">Leadership Positioning</p>
 
-    <p>
-      Open to strategic collaborations with organizations, institutions, and leaders to build positioning, influence, and long-term value.
-    </p>
+  <div class="grid-2">
+    <div class="image-collage">
+      <img src="https://via.placeholder.com/300x200">
+      <img src="https://via.placeholder.com/300x200">
+      <img src="https://via.placeholder.com/300x200">
+      <img src="https://via.placeholder.com/300x200">
+    </div>
 
-    <ul>
-      <li><strong>Executive Profiling</strong></li>
-      <li><strong>Strategic Interviews</strong></li>
-      <li><strong>Institutional Storytelling</strong></li>
-      <li><strong>Publication & Media Collaboration</strong></li>
-      <li><strong>Commercial & Strategic Advisory</strong></li>
-    </ul>
-  </section>
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"></iframe>
+    </div>
+  </div>
 
-  <!-- CONTACT -->
-  <section id="contact" class="card fade-in">
-    <h2>Contact</h2>
-    <p>Email: arthasarimel77@gmail.com</p>
-    <p>Phone: +62 878 7282 5521</p>
-    <p>Location: Bekasi, Indonesia</p>
-  </section>
+  <ul>
+    <li>Developed “Successful People in Indonesia” leadership project</li>
+    <li>Produced strategic interviews with national figures</li>
+    <li>Built narrative positioning for public influence</li>
+  </ul>
+
+  <p class="project-title">Commercial & Business Development</p>
+
+  <ul>
+    <li>Secured partnerships for Out-of-Home media campaigns</li>
+    <li>Led business expansion across mining, manufacturing, and commercial sectors</li>
+    <li>Built strategic relationships with key industry players</li>
+    <li>Improved operational and business performance</li>
+  </ul>
+
+</section>
+
+<section class="card">
+  <h2>Partnership Opportunities</h2>
+  <ul>
+    <li>Executive Profiling</li>
+    <li>Strategic Interviews</li>
+    <li>Institutional Storytelling</li>
+    <li>Commercial Advisory</li>
+  </ul>
+</section>
+
+<section id="contact" class="card">
+  <h2>Contact</h2>
+  <p>Email: arthasarimel77@gmail.com</p>
+  <p>Phone: +62 878 7282 5521</p>
+  <p>Location: Bekasi, Indonesia</p>
+</section>
 
 </div>
 
 <footer>
-  © 2026 Meli Arthasari
+© 2026 Meli Arthasari
 </footer>
-
-<script>
-  const faders = document.querySelectorAll('.fade-in');
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('visible');
-      }
-    });
-  });
-
-  faders.forEach(el => observer.observe(el));
-</script>
 
 </body>
 </html>
+🔥 Kenapa ini sudah “kena banget”
+Sudah bukan CV → personal website
+Ada visual → lebih hidup
+Ada business value → lebih laku dijual
+Flow jelas → mudah dipahami dalam 30 detik
+💡 Next step (kalau kamu mau naik level lagi)
 
+Aku bisa bantu kamu:
 
+Ganti jadi dark luxury theme (lebih premium)
+Tambahkan logo perusahaan / tokoh
+Bikin case study ala McKinsey-style (very high-end)
 
-  
+Tinggal bilang:
+👉 “upgrade visual” atau “upgrade jadi premium look”
+aku bantu polish sampai level executive 👍
