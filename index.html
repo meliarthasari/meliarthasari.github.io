@@ -1,144 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meli Arthasari</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meli Arthasari</title>
 
-<style>
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  margin: 0;
-  background-color: #f5f5f5;
-  color: #222;
-}
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-.hero {
-  background: linear-gradient(135deg, #1f2937, #111827);
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-}
+  <style>
+    html { scroll-behavior: smooth; }
 
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #222;
+      background: #f8f9fb;
+    }
 
-.hero h2 {
-  font-weight: 400;
-  margin-bottom: 20px;
-}
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+      z-index: 1000;
+    }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
-}
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
 
-.card {
-  background: white;
-  padding: 30px;
-  margin-bottom: 25px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-}
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(to bottom, #ffffff, #f0f2f5);
+      padding: 20px;
+    }
 
-h2 {
-  margin-bottom: 15px;
-}
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
 
-ul {
-  padding-left: 20px;
-}
+    .hero h2 {
+      font-weight: 400;
+      color: #555;
+    }
 
-li {
-  margin-bottom: 10px;
-}
+    .hero p {
+      font-style: italic;
+      color: #777;
+    }
 
-.fade-in {
-  animation: fadeIn 0.8s ease-in;
-}
+    .container {
+      max-width: 950px;
+      margin: auto;
+      padding: 60px 20px;
+    }
 
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(10px);}
-  to {opacity: 1; transform: translateY(0);}
-}
+    h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 20px;
+    }
 
-.contact {
-  text-align: center;
-}
-</style>
+    p { color: #444; }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+      transition: 0.3s;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+
+    ul { padding-left: 20px; }
+
+    li { margin-bottom: 10px; }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease;
+    }
+
+    .visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- HERO -->
+<nav>
+  <div><strong>Meli Arthasari</strong></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#impact">Impact</a>
+    <a href="#scope">Scope</a>
+    <a href="#partnership">Collaboration</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
 <section class="hero">
-  <h1>Meli Arthasari</h1>
-  <h2>Editor in Chief</h2>
-  <p>Shaping narratives, influence, and legacy through strategic storytelling.</p>
+  <div>
+    <h1>Meli Arthasari</h1>
+    <h2>Strategic Communications & Commercial Leader</h2>
+    <p>Bridging business strategy, narrative, and influence.</p>
+  </div>
 </section>
 
 <div class="container">
 
-<!-- PROFILE -->
-<div class="card fade-in">
-  <h2>Profile</h2>
-  <p>Editor in Chief at <strong>British Publishing House – Indonesia (Britishpedia Media Group)</strong>, with over 15+ years of leadership experience across media, advertising, and IT.</p>
-  <p>Former Business Director with expertise in FMCG, ICT, multinational manufacturing, and mining.</p>
-  <p>Recognized for shaping narratives that elevate influence and strategic positioning.</p>
+  <!-- ABOUT -->
+  <section id="about" class="card fade-in">
+    <h2>About</h2>
+    <p>
+      A strategic leader with over 15+ years of experience across media, advertising, and business development.
+    </p>
+    <p>
+      Bridging commercial strategy with narrative excellence, shaping positioning, influence, and long-term value for leaders and organizations.
+    </p>
+    <p>
+      Currently leading editorial direction at Britishpedia - Indonesia, while bringing a strong foundation in sales, partnerships, and cross-industry business growth.
+    </p>
+  </section>
+
+  <!-- EDITORIAL SCOPE -->
+  <section id="scope" class="card fade-in">
+    <h2>Editorial & Leadership Scope</h2>
+    <ul>
+      <li><strong>Government:</strong> Current and former national leaders and policymakers</li>
+      <li><strong>Business:</strong> Corporate leaders, BUMN executives, and entrepreneurs</li>
+      <li><strong>Academia:</strong> Thought leaders and public intellectuals</li>
+      <li><strong>Arts & Entertainment:</strong> Cultural figures and creative industry leaders</li>
+    </ul>
+  </section>
+
+  <!-- IMPACT -->
+  <section id="impact" class="card fade-in">
+    <h2>Selected Impact & Commercial Experience</h2>
+    <ul>
+      <li>Led national-level leadership encyclopedia publication</li>
+      <li>Built strategic narratives for high-profile leaders and public figures</li>
+      <li>Led business development across FMCG, ICT, manufacturing, and mining sectors</li>
+      <li>Managed key accounts and strategic client relationships</li>
+      <li>Delivered revenue growth through integrated communication and sales strategy</li>
+      <li>Bridging storytelling with commercial objectives across industries</li>
+    </ul>
+  </section>
+
+  <!-- PARTNERSHIP -->
+  <section id="partnership" class="card fade-in">
+    <h2>Partnership Opportunities</h2>
+
+    <p>
+      Open to strategic collaborations with organizations, institutions, and leaders to build positioning, influence, and long-term value.
+    </p>
+
+    <ul>
+      <li><strong>Executive Profiling</strong></li>
+      <li><strong>Strategic Interviews</strong></li>
+      <li><strong>Institutional Storytelling</strong></li>
+      <li><strong>Publication & Media Collaboration</strong></li>
+      <li><strong>Commercial & Strategic Advisory</strong></li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="card fade-in">
+    <h2>Contact</h2>
+    <p>Email: arthasarimel77@gmail.com</p>
+    <p>Phone: +62 878 7282 5521</p>
+    <p>Location: Bekasi, Indonesia</p>
+  </section>
+
 </div>
 
-<!-- ABOUT -->
-<div class="card fade-in">
-  <h2>About</h2>
-  <p>Meli Arthasari is a media and business leader bridging executive strategy with editorial leadership.</p>
+<footer>
+  © 2026 Meli Arthasari
+</footer>
 
-  <p><strong>Global Presence:</strong></p>
-  <ul>
-    <li>Europe: Germany, Slovakia, Austria, Hungary, Poland, Czech Republic</li>
-    <li>Asia: Indonesia, Malaysia, Singapore</li>
-  </ul>
+<script>
+  const faders = document.querySelectorAll('.fade-in');
 
-  <p>Leads publication of the <strong>“Encyclopedia of Successful People in Indonesia”</strong>.</p>
-</div>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+      }
+    });
+  });
 
-<!-- EDITORIAL SCOPE -->
-<div class="card fade-in">
-  <h2>Editorial Scope</h2>
-  <ul>
-    <li><strong>Government:</strong> Current and former national leaders and policymakers</li>
-    <li><strong>Business:</strong> Corporate leaders, BUMN executives, and entrepreneurs</li>
-    <li><strong>Academia:</strong> Scholars and public intellectuals</li>
-    <li><strong>Arts & Entertainment:</strong> Cultural figures and creators</li>
-  </ul>
-</div>
-
-<!-- PARTNERSHIP -->
-<div class="card fade-in">
-  <h2>Partnership Opportunities</h2>
-  <ul>
-    <li>Executive Profiling</li>
-    <li>Strategic Interviews</li>
-    <li>Institutional Storytelling</li>
-    <li>Publication Partnerships</li>
-    <li>Personal Brand Positioning</li>
-  </ul>
-</div>
-
-<!-- CONTACT -->
-<div class="card contact fade-in">
-  <h2>Contact</h2>
-  <p>Email: arthasarimel77@gmail.com</p>
-  <p>Phone: +62 878 7282 5521</p>
-</div>
-
-</div>
+  faders.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
 
-     
 
-   
+
+  
