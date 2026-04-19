@@ -62,7 +62,7 @@
     }
 
     .container {
-      max-width: 950px;
+      max-width: 1000px;
       margin: auto;
       padding: 60px 20px;
     }
@@ -101,11 +101,73 @@
       background: #fafafa;
     }
 
+    /* VIDEO SECTION */
+    .video-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .video-item {
+      background: #fafafa;
+      border-radius: 12px;
+      border: 1px solid #eee;
+      padding: 15px;
+    }
+
+    .video-item video {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .video-item h4 {
+      margin: 10px 0 5px;
+    }
+
+    .video-item p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* CONTACT */
+    .contact-links {
+      margin-top: 20px;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 10px 18px;
+      background: #222;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .contact-btn.outline {
+      background: transparent;
+      border: 1px solid #222;
+      color: #222;
+    }
+
     footer {
       text-align: center;
       padding: 30px;
       color: #777;
     }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
   </style>
 </head>
 
@@ -116,6 +178,7 @@
   <div>
     <a href="#profile">Profile</a>
     <a href="#projects">Projects</a>
+    <a href="#featured">Works</a>
     <a href="#partnership">Partnership</a>
     <a href="#contact">Contact</a>
   </div>
@@ -146,36 +209,34 @@
   </p>
 </section>
 
-<section class="card fade-in">
+<section class="card">
   <h2>Editorial Scope</h2>
 
-  <p style="color:#555; margin-bottom:25px;">
+  <p class="subtitle">
     Covering influential figures across sectors, shaping narratives that connect leadership, 
     industry, and society.
   </p>
 
-  <div class="scope-grid">
-
-    <div class="scope-item">
-      <h4>Government</h4>
+  <div class="services">
+    <div class="service-item">
+      <h3>Government</h3>
       <p>Current and former national leaders shaping policy and public discourse</p>
     </div>
 
-    <div class="scope-item">
-      <h4>Business</h4>
+    <div class="service-item">
+      <h3>Business</h3>
       <p>Corporate, BUMN, and entrepreneurial leaders driving economic transformation</p>
     </div>
 
-    <div class="scope-item">
-      <h4>Academia</h4>
+    <div class="service-item">
+      <h3>Academia</h3>
       <p>Scholars and thinkers advancing knowledge and global perspectives</p>
     </div>
 
-    <div class="scope-item">
-      <h4>Arts & Entertainment</h4>
+    <div class="service-item">
+      <h3>Arts & Entertainment</h3>
       <p>Creative figures shaping culture and public imagination</p>
     </div>
-
   </div>
 </section>
 
@@ -202,12 +263,55 @@
   <div class="project">
     <h3>Selected Impact</h3>
     <p>
-   • Built access to high-level decision makers across industries
-   • Enabled strategic brand positioning through editorial narratives
-   • Contributed to revenue-generating partnerships and media placements
+      • Built access to high-level decision makers across industries <br>
+      • Enabled strategic brand positioning through editorial narratives <br>
+      • Contributed to revenue-generating partnerships and media placements
     </p>
   </div>
+</section>
 
+<!-- VIDEO SECTION -->
+<section id="featured" class="card">
+  <h2>Featured Works</h2>
+  <p class="subtitle">
+    Selected video highlights showcasing leadership conversations and strategic storytelling.
+  </p>
+
+  <div class="video-grid">
+
+    <div class="video-item">
+      <video controls>
+        <source src="Leadership positioning.mp4" type="video/mp4">
+      </video>
+      <h4>Leadership Positioning</h4>
+      <p>A curated compilation of leaders across sectors.</p>
+    </div>
+
+    <div class="video-item">
+      <video controls>
+        <source src="Government.mp4" type="video/mp4">
+      </video>
+      <h4>Conversation with Former President</h4>
+      <p>Capturing insights on leadership and national vision.</p>
+    </div>
+
+    <div class="video-item">
+      <video controls>
+        <source src="Entertainer.mp4" type="video/mp4">
+      </video>
+      <h4>Interview with Public Figure</h4>
+      <p>Exploring influence, creativity, and public engagement.</p>
+    </div>
+
+    <div class="video-item">
+      <video controls>
+        <source src="Corporate.mp4" type="video/mp4">
+      </video>
+      <h4>Corporate Tech Leadership Interview</h4>
+      <p>Discussing innovation and future industries.</p>
+    </div>
+
+  </div>
 </section>
 
 <section id="partnership" class="card">
@@ -225,7 +329,7 @@
 
     <div class="service-item">
       <h3>Strategic Interviews</h3>
-      <p>Extracting insight and thought leadership into impactful content.</p>
+      <p>Extracting insight into impactful content.</p>
     </div>
 
     <div class="service-item">
@@ -235,30 +339,26 @@
 
     <div class="service-item">
       <h3>Commercial & Strategic Advisory</h3>
-      <p>Aligning storytelling with business growth and partnerships.</p>
+      <p>Aligning storytelling with business growth.</p>
     </div>
 
   </div>
 </section>
 
-<section class="contact">
+<section id="contact" class="card">
   <h2>Let’s Collaborate</h2>
   <p>
     Open for strategic collaborations, executive profiling, and commercial partnerships.
   </p>
 
   <div class="contact-links">
-    
-    <!-- EMAIL -->
     <a href="mailto:arthasarimel77@gmail.com?subject=Partnership Inquiry" class="contact-btn">
       📩 Get in Touch
     </a>
 
-    <!-- LINKEDIN -->
     <a href="https://www.linkedin.com/in/meli-arthasari-910774314/" target="_blank" class="contact-btn outline">
       🔗 LinkedIn Profile
     </a>
-
   </div>
 </section>
 
@@ -270,4 +370,3 @@
 
 </body>
 </html>
-
